@@ -1,4 +1,4 @@
-package hello.itemservice.web.validation;
+package hello.itemservice.web.controller;
 
 import hello.itemservice.domain.item.Item;
 import hello.itemservice.domain.item.ItemRepository;
