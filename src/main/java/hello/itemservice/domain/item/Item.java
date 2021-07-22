@@ -1,7 +1,9 @@
 package hello.itemservice.domain.item;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.ScriptAssert;
 
@@ -10,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Data
+@NoArgsConstructor
 public class Item {
 //
 //    @NotNull(groups = UpdateCheck.class)
@@ -26,8 +29,7 @@ public class Item {
 //    @Max(value = 9999, groups = SaveCheck.class)
     private Integer quantity;
 
-    public Item() {
-    }
+
 
     @Builder
     public Item(String itemName, Integer price, Integer quantity) {
